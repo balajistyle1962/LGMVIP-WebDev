@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="task1.css">
+        <script type="text/javascript" src="myscript.js"></script>
+        <title>
+            Soloop Tech
+        </title>
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body onload="slider()">
+        <section id="heading">
+            <div class="head">
+                    <div class="nav-a">
+                        <ul>
+                            <li class="serve"><a href="#">Home</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Login</a></li> 
+                        </ul>
+    
+                    </div>  
+                             
+            </div>
+            <div>
+                <div class="logo">
+                    <h3>SL Tech</h3> 
+                </div>
+                <div class="head-image">
+                    <img src="images/background.jpg" alt="first image">
+                </div>
+                <div class="head-text">
+                     <p>Providing Software to the World with<br>affordable costs.</p>
+                    </div>
+                    <div class="head-button">
+                        <a href="#"><span></span>Explore</a>
+                    </div>
+        </section>
+        <section id="body1">
+            <div class="bodyimg">
+                <img src="images/headimg.jpg" alt="bodyimg">
+                
+            </div>
+            <div class="body_text">
+                <p>Providing clouds as services for customers <br><span>more comfort.</span> </p>
+            </div>
+            <div class="body-button">
+                <a href="#"><span></span>Explore</a>
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <section id="job">
+            <video id="slider1" autoplay muted loop>
+                <source src="videos/video1.mp4" type="video/mp4">
+            </video>
+            <ul class="nav-v">
+                <li onclick="videoUrl('video1.mp4')"><img src="images/thumb1.png"></li>
+                <li onclick="videoUrl('video2.mp4')"><img src="images/thumb2.png"></li>
+                <li onclick="videoUrl('video3.mp4')"><img src="images/thumb3.png"></li>
+                <li onclick="videoUrl('video4.mp4')"><img src="images/thumb4.png"></li>
+
+            </ul>
+                <script type="text/javascript">
+                function videoUrl(myvideo){
+                    document.getElementById("slider1").src = myvideo;
+                }
+            </script>
+        </section>
+
+ 
+        <section id="slider_img">
+            <div class="slider1" >
+                <img src="images/slider1.jpg" id="slideimg">
+            </div>
+            <div class="hello">
+
+            </div>
+            <div class="android">
+                <h1>Android Application Development</h1><br><br><br>
+                <p>We were developing innovative android application with great efficiency and low cost</p><br><br><br>
+                <p>We were using latest technologies to develop an android application</p><br><br><br>
+                <p>Lets Explore some of our projects</p><br><br><br>
+                <a href="#"><span></span>Explore</a>
+
+            </div>
+            <div class="web">
+                <h1>Web Application Development</h1><br><br><br>
+                <p>Website is important for any oraganisation to develop in this techonolgical park </p><br><br><br>
+                <p>So we were providing full stack web development as a product for customers.</p>
+                <p class="please">With the Lowest cost ever</p>
+                <a href="#"><span></span>Explore</a>
+            </div>
+            <div class="ml">
+                <h1>Machine Learning</h1><br><br><br>
+                <p>We are also Providing Machine Learning as a product due to  the advancement of technology</p><br><br><br>
+                <p>We are using latest technology for ml</p><br><br><br>
+                <p>For more information</p><br><br><br>
+                <a href="#"><span></span>Explore</a>
+            </div>
+            <div class="iot">
+
+            </div>
+            
+            <!--Javascript code for image wavering-->
+            <script>
+                var slideimg = document.getElementById("slideimg");
+        var images = new Array(
+            "images/slider1.jpg",
+            "images/slider2.jpg",
+            "images/slider3.png",
+            "images/slider4.jpg"
+            );
+            var len = images.length;
+            var i = 0;
+            function slider()
+            {
+                if(i>len-1)
+                {
+                    i=0;
+                }
+                slideimg.src = images[i];
+                i++;
+                setTimeout('slider()',6000);
+            }
+
+            </script>
+        </section>
+
+        <section id="company_logo">
+                <h1>Some of our Customers</h1>
+                <div class="bosch">
+                    <img src="images/bosh.png" alt="boschlogo">
+                </div>
+                <div class="lt">
+                    <img src="images/lt.png" alt="landt">
+                </div>
+                <div class="essar">
+                    <img src="images/essar.png" alt="esaar">
+                </div>
+                <div class="dlf">
+                    <img src="images/dlf.png" alt="dlf">
+                </div>
+                <div class="godrej">
+                    <img src="images/godrej.png">
+                </div>
+        </section>
+        <section id="footer">
+            <div class="title-text">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="map">
+                <img src="images/map.jpg" alt="map">
+            </div>
+            <div class="form">
+                <label><b>Name:</b></label><br>
+                <input type="text"><br>
+                <br><br>
+                <label><b>Email Address:</b></label><br>
+                <input type="email"><br>
+                <br><br>
+                <label><b>Phone Number:</b></label><br>
+                <input type="text"><br>
+                <br><br>
+                <label><b>Services you want?</b></label><br>
+                <label class="check">App Development
+                <input type="checkbox" name="check">
+                <span class="mark"></span>
+                </label>
+                <label class="check">Web Development
+                <input type="checkbox" name="check">
+                <span class="mark"></span>
+                </label>
+                <label class="check">Automation
+                <input type="checkbox" name="check">
+                <span class="mark"></span>
+                </label><br>
+                <input class="button" type="button" value="Submit">
+            </div>
+        </section>
+        <section id="ourcompany">
+            <div class="connect">
+                <p>Connect with us</p>
+                <img src="images/twitter.png" alt="twitter">
+                <img src="images/facebook.png" alt="facebook">
+                <img src="images/linkedin.png" alt="in">
+                <img src="images/instagram.jpg" alt="insta">
+            </div>
+            <div class="mail">
+                <p>sltech@gmail.com</p>
+            </div>
+            <div class="nav-b">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Achievements</a></li> 
+                </ul>
+    
+            </div>
+    
+        </section>
+
+    </body>
+</html>
