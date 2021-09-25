@@ -1,0 +1,74 @@
+
+.navigation-bar h2{
+padding: 7px auto 10px 3px;
+display: inline-block;
+color: white;
+}
+button{
+float: right;
+background-color: blueviolet;
+border: none;
+padding: 15px;
+width: 10%;
+margin-top: 13px;
+border-radius: 5%;
+}
+
+button:hover{
+background-color: indigo;
+color: white;
+cursor: pointer;
+}
+
+.navigation{
+background-color: black;
+}
+
+.container-1
+{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(147,67,67,1) 0%, rgba(111,27,27,1) 90% );
+  width: 100%;
+  height: 120vh;
+}
+
+.container-content{
+width:990px;
+margin: 0px auto;
+}
+
+img{
+border-radius: 100%;
+opacity: 1;
+display: block;
+height: auto;
+backface-visibility: hidden;
+}
+
+.align{
+  width: 1000px;
+  margin: 0px auto;
+  }
+
+.info{
+padding-top: 15px;
+margin: 10px;
+margin-right: 160px;
+margin-top: 20px;
+width: 320px;
+display: inline-block;
+height: 260px;
+text-align: center;
+}
+
+
+img:hover
+{
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+}
+h3:hover
+{
+  color: #61dafb;
+  cursor: pointer;
+}
